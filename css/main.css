@@ -2,10 +2,29 @@ body {
 	font-family: Georgia, serif;
 	height: 100%;
 	margin: 0;
-	text-align: center;
+	/*text-align: center;*/
 	width: 100%;
 }
 
-h1 {
-	font-size: 32px;
+h1{
+	font-size: 36px;
+}
+
+p{
+	font-size: 18px;
+	font-family: Gotham, sans-serif;
+}
+
+.backfixed {
+	background:no-repeat center right fixed url(https://images.unsplash.com/photo-1581939726324-35262ac30941?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+
+.backfixed .overlay{
+	background-color: pink;
+	opacity: 0.75;
+	position: absolute;
+}
+
+.backfixed .container{
+	text-align: center;
 }
