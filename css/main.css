@@ -11,7 +11,7 @@ h1{
 }
 
 p{
-	font-size: 1.5em;
+	font-size: 1em;
 	font-family: "Courier New", serif;
 }
 
@@ -23,11 +23,11 @@ h2{
 	background:no-repeat center fixed url(https://images.unsplash.com/photo-1516825513084-7a3397fcd108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
 	background-size: cover;
 	margin: 0px;
-  padding: 100px;
+  padding: 10px;
 }
 
 .backfixed .overlay{
-	background-color: #94c2d9;
+	background-color: #cca4a4; /*#94c2d9*/
 	opacity: 0.75;
 	position: absolute;
     top: 0px;
@@ -42,7 +42,7 @@ h2{
 	text-align: center;
 	position: relative;
 	z-index: 2;
-
+	margin-top: 10em;
 }
 
 .background-white{
@@ -52,4 +52,60 @@ h2{
 	padding: 100px;
 }
 
+a{ /*links*/
+	position: relative;
+	z-index: 2;
+	color: black;
+	font-family: "Courier New",monospace;
+	text-decoration: none;
+}
+
 /*highlight animation*/
+
+.external:before {
+  content: "";
+  background: #f1d412;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  animation: .2s forwards no-hover-external linear;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+.external:hover:before,
+.external:focus:before {
+  animation: .5s forwards hover-external linear;
+  animation-fill-mode: forwards;
+  opacity: .7;
+}
+
+.google:before { background: lightgreen; }
+
+@keyframes hover-external { /*mouse hover in*/
+  0% {
+      height: 12px;
+     }
+  45% {
+      height: 2px;
+     }
+  55% {height: 3px;}
+  100% {
+      height: 1.8rem;
+     }
+}
+@keyframes no-hover-external {
+  0% {
+      height: 1.8rem;
+     }
+  45% {height: 3px;}
+  55% {
+      height: 2px;
+     }
+
+  100% {
+      height: 3px;
+     }
+}
