@@ -3,10 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Hi! Call me Gaby</title>
+    <style media="screen">
+      html,body{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background-image: url(https://images.unsplash.com/photo-1546177461-68622f53ed0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80);
+        background-size: cover;
+      }
+      h1{
+        margin: 0;
+        padding-top: 23vw;
+        color: white;
+        font-size: 5em;
+      }
+      h3{
+        color: #e9ecffed;
+        font-size: 1.5em;
+        font-family: "Courier New",monospace;
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+      .title{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+      }
+      .overlay{
+        background-color: #5c6bc0;
+        opacity: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
-    
-
+    <div class="title">
+      <h1>Just Call Me Gaby</h1>
+      <h3>Beyond the first day of class, I don't think I've ever heard anyone call me by my full name.</h3>
     </div>
+    <div class="overlay"></div>
   </body>
 </html>

@@ -11,7 +11,7 @@ h1{
 }
 
 p{
-	font-size: 1em;
+	font-size: 1.2em;
 	font-family: "Courier New", serif;
 }
 
@@ -27,7 +27,7 @@ h2{
 }
 
 .backfixed .overlay{
-	background-color: #cca4a4; /*#94c2d9*/
+	background-color: #7986CB;/*#cca4a4; #94c2d9*/
 	opacity: 0.75;
 	position: absolute;
     top: 0px;
@@ -50,7 +50,26 @@ h2{
 	background-color: white;
 	position: relative;
 	z-index: 2;
-	padding: 100px;
+	/*height: 50vw;
+	padding-top: 40px;*/
+	padding:100px;
+	height: 20vw;
+}
+
+/*formatting main chunk of text/about section*/
+.background-white p{
+	text-indent: 100px;
+	text-align: left;
+}
+
+.background-white .links{
+	text-indent: 0px;
+	text-align: center;
+}
+
+.footer{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 a{ /*links*/
@@ -59,6 +78,13 @@ a{ /*links*/
 	color: black;
 	font-family: "Courier New",monospace;
 	text-decoration: none;
+}
+
+.openingstatment{
+	color: #7986CB; /*#faacac; #cca4a4; purple*/
+	font-family: serif;
+	font-style: italic;
+	font-size: 2em;
 }
 
 /*highlight animation*/
