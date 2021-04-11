@@ -1,38 +1,210 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Just Call Me Gaby</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="profile.png">
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="minifavicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">     -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Playfair+Display:wght@400;600;900&display=swap" rel="stylesheet">
 
-<body>
-    <!-- title section -->
-<div class="backfixed" style="height:50vw">
-  <div class="title">
-    <h1 style="font-size:7vw">Gabrielle Martinez</h1>
-    <p style="font-size: 2vw">Computer Science | Economics | Undergraduate Student</p>
-  </div>
-  <div class="overlay" style="height:85vw"></div>
-</div>
+    <title>Gabrielle M.</title>
+    <style media="screen">
+      html,body{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        /* background-image: url(favicon.png) ; */
+        /* background-image: url(https://images.unsplash.com/photo-1546177461-68622f53ed0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80); */
+        /* background-size: cover;  */
+        color: white;
+        background-color: black;
+        
+        /* Hide scrollbars */
+        overflow: hidden;
+      }
+      h1{
+        margin: 0;
+        /* padding-top: 23vw; */
+        padding-top: 6vw;
+        /* color: white; */
+        font-size: 80pt;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        text-align: left;
 
-  <!-- section1 -->
-<div class="background-white" style="height:20vw">
-  <p> <a class="openingstatment">I'm something of a jack-of-all-trades</a> so bare with me. I am endlessly curious and seek the intersection between design, economics, and technology.</p>
+        padding-left: 15vw;
+      }
+      div{ /*martinez*/
+        margin: 0;
+        /* color: white; */
+        font-size: 80pt;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        text-align: left;
 
-  <!--h3>UNDER CONSTRUCTION</h3-->
-  <p class="links">
-    <a class="external google" href="https://www.google.com/">google here</a> |
-    <a class="external" href="" target="blank">email</a> |  <a class="external jiosaavn" href="http://jiosaavn.com/corporate" target="blank">JioSaavn</a> | <a class="external" href=hi.html>hi!</a>
-  </p>
+        padding-left: 15vw;
+      }
+      h3{ /*intersecting econ and design*/
+        /* color: white; */
+        text-align: left;
+        font-size: 30pt;
+        /* font-family: "Montserrat",sans-serif; */
+        font-family: "Open Sans Condensed", sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+        padding-left: 27vw;
+        padding-right: 5vw;
+        padding-bottom: 0;
+        margin-bottom: 2px
+        /* padding-bottom: 15vw; */
+        /* padding-top: 1vw; */
+        /* background-color: black; */
+      }
+      h2{ /*misfortune born nobly */
+        color: black;
+        font-size: 40pt;
+        font-family: 'Open Sans Condensed',sans-serif;
+        font-weight:300;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        /* font-style: italic; */
+        text-align: center;
+        margin-bottom: 0vw;
+      }
+      .footer{
+        color:black;
+        font-size: 14pt;
+        font-family: serif;
+        font-style: italic;
+        font-weight: lighter;
+        /* background-color: black; */
+        text-align: center;
+        /* text-decoration: line-through; */
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vw;
+        padding-top: 1.5vw;
+      }
+      .title{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+      }
+      .overlay{
+        /* background-color: #0a3e61; */
+        /* background-color: rgb(10, 87, 70)*/
+        /* background-color: #f76a8c; */
+        background-color: white;
+        opacity: 100%;
+        /* height: 40; */
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 42vw;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        /* padding-bottom: 0%; */
+      }
+      a{ /*links*/
+        position: relative;
+        z-index: 2;
+        color: white;
+        font-family:"Open Sans Condensed",sans-serif;
+        text-decoration: none;
+      }
+      .links{
+        font-family:"Open Sans Condensed",sans-serif;
+        font-weight: 300;
+        font-size: 25pt;
+        text-align: left;
+        padding-left: 27vw;
+        padding-bottom: 6vw;
+        margin-top: 0px;
+      }
 
-</div>
+      /*highlight animation*/
+      /*source: http://www.leeannpica.com/*/
 
-<div class="footer">
-  <p>Designed by me. Credits to <a class="external" href="">name1</a> for inspiration and <a class="external" href="http://www.leeannpica.com/">Leeann Sheely</a> for link animations. </p>
-</div>
+      .external:before {
+        content: "";
+        /* background: #f1d312; */
+        /* background:#f76a8c; */
+        background: rgb(255, 51, 0);
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        animation: .2s forwards no-hover-external linear;
+        animation-fill-mode: forwards;
+        z-index: -2;
+      }
+      .external:hover:before,
+      .external:focus:before {
+        animation: .5s forwards hover-external linear;
+        animation-fill-mode: forwards;
+        opacity: 1;
+      }
+      @keyframes hover-external { /*mouse hover in*/
+        0% {
+            height: 3px; /*12px3*/
+           }
+        45% {
+            height: 1px; /*2px1*/
+           }
+        55% {height: 3px;}
+        100% {
+            height: 1.8rem;
+           }
+      }
+      @keyframes no-hover-external {
+        0% {
+            height: 1.8rem;
+           }
+        45% {height: 3px;}
+        55% {
+            height: 1px; /*2px1*/
+           }
+         
+        100% {
+            height: 3px; /*12px3*/
+           }
+      }
 
-</body>
+
+
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>gabrielle</h1>
+      <div>martinez</div>
+      <h3>INTERSECTING GRAPHIC DESIGN & ECONOMICS</h3>
+      
+      <!-- <p>A Senior at Pace University studying Graphic Design, Economics, and Computer Science, I use my quantitative background to better inform the public and encourage positive/healthy behavior.</p> -->
+
+      <p class = "links">
+       <a class="external about" href=>about me</a> | <a class= "external contact">contact me</a>
+      </p>
+
+      <!-- adding image/icon -->
+      <!-- <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> -->
+
+      <h2>M I S F O R T U N E · N O B L Y · B O R N</h2>
+      <div class ="footer">
+        <p>under construction</p>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
 </html>
